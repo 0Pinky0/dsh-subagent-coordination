@@ -1,0 +1,9 @@
+# Host-plane example. The subagents registry and spawn provider remain host-owned.
+- id: subagent-coordination
+  name: /absolute/path/to/dsh-subagent-coordination
+  config:
+    provider: spawn
+    maxBatchSize: 8
+    maxBatchConcurrency: 4
+    defaultTimeoutMs: 120000
+    maxTimeoutMs: 900000

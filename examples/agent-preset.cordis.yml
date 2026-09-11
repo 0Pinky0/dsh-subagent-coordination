@@ -1,0 +1,8 @@
+# Agent-plane example for a Web preset. Put this row beside the existing delegation tools.
+# Do not create another subagents service or one-shot provider here.
+- id: subagent-coordination
+  name: /absolute/path/to/dsh-subagent-coordination
+  config:
+    provider: spawn
+    maxBatchSize: 8
+    maxBatchConcurrency: 4
