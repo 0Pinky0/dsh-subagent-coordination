@@ -1,0 +1,7 @@
+- insert:
+    - id: subagent-coordination
+      name: '@deepseek-ai/dsh-plugin-subagent-coordination'
+      config:
+        provider: spawn
+        maxBatchSize: 8
+        maxBatchConcurrency: 4
